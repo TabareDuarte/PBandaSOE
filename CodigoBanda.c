@@ -1,3 +1,5 @@
+//BANDA SELECCIONADORA DE OBJETOS//
+
 ////  Incluyo librerias //////////////////////////////////////////
 #include <stdio.h>
 #include <string.h>
@@ -154,3 +156,5 @@ void tareaSepararObjeto(void *pvParameter)
     }
     //vTaskDelete(NULL);
 }
+
+
