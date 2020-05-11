@@ -61,7 +61,7 @@ void app_main()
   gpio_set_direction(sensorServoNegro, GPIO_MODE_INPUT);
   gpio_set_pull_mode(sensorServoNegro,GPIO_PULLUP_ONLY);  //Este modo está a discusión
   
-  vTaskSuspend( ParoB );  //Suspenso todas las tareas menos la de encendido de banda, para que sólo atienda a esta y no gaste energía en las demás
+  vTaskSuspend( ParoB );  //Suspendo todas las tareas menos la de encendido de banda, para que sólo atienda a esta y no gaste energía en las demás
   vTaskSuspend( DetectarC );  //  pero aún falta ver si se puede emplear la sistaxis de tareas aquí, así.
   vTaskSuspend( DetectarOB );
   vTaskSuspend( DetectarON );
@@ -71,7 +71,7 @@ void app_main()
 
 }
 
-///////// Tarea para detectar que se precionó el botón de inicio   ///////////////
+///////// Tarea para detectar que se presionó el botón de inicio   ///////////////
 void tareaInicioBanda(void *pvParameter)
 {
     while(1) 
@@ -90,7 +90,7 @@ void tareaInicioBanda(void *pvParameter)
 }
 
 
-///////// Tarea para detectar que se precionó el botón de paro   ///////////////
+///////// Tarea para detectar que se presionó el botón de paro   ///////////////
 void tareaParoBanda(void *pvParameter)
 {
     while(1) 
